@@ -42,7 +42,7 @@ import Example from './components/example/example';
 
   function bindExample() {
     var imageList = document.querySelector('.image-list');
-    
+
     imageList.addEventListener('click', function(event) {
       event.target.classList.add(CLICKED_CLASS);
       app.state.appElement.querySelector('h1').innerHTML =

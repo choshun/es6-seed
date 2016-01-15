@@ -1,5 +1,5 @@
 {
-  "name": "es6 seed",
+  "name": "es6-seed",
   "version": "0.0.1",
   "description": "Seed for vanilla es6",
   "main": "src/server/index.js",
