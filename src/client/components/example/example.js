@@ -50,6 +50,16 @@ class Example {
     this.render(html);
   }
 
+  bindExample(CLICKED_CLASS) {
+    var imageList = document.querySelector('.image-list');
+
+    imageList.addEventListener('click', (event) => {
+      event.target.classList.add(CLICKED_CLASS);
+      this.state.appElement.querySelector('h1').innerHTML =
+          event.target.getAttribute('id');
+    });
+  }
+
   /**
    * Gets canvas images from app.state.
    * @param {Object} canvasImages canvasImages

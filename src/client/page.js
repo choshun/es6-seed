@@ -37,17 +37,7 @@ import Example from './components/example/example';
     example.createImages();
 
     // bind example
-    bindExample();
-  }
-
-  function bindExample() {
-    var imageList = document.querySelector('.image-list');
-
-    imageList.addEventListener('click', function(event) {
-      event.target.classList.add(CLICKED_CLASS);
-      app.state.appElement.querySelector('h1').innerHTML =
-          event.target.getAttribute('id');
-    });
+    example.bindExample(CLICKED_CLASS);
   }
 
   init();
